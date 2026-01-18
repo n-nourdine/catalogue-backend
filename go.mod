@@ -1,4 +1,4 @@
-module catalogue-api
+module catalogue-backend
 
 go 1.24.9
 
