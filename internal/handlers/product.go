@@ -11,7 +11,7 @@ type ProductHandler struct {
 	Repo *repository.ProductRepository
 }
 
-// EnableCORS ajoute les headers pour que ton frontend puisse parler au backend
+// EnableCORS ajoute les headers pour que le frontend puisse parler au backend
 func (h *ProductHandler) EnableCORS(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 	(*w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")

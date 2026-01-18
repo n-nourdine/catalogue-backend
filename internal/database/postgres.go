@@ -10,7 +10,6 @@ import (
 )
 
 func Connect() (*sql.DB, error) {
-	// On récupère l'URL sécurisée depuis l'environnement
 	connStr := os.Getenv("DATABASE_URL")
 	if connStr == "" {
 		return nil, fmt.Errorf("DATABASE_URL est manquant")
