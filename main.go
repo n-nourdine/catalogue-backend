@@ -51,6 +51,7 @@ func initDB() {
 	}
 
 	db, err = sql.Open("postgres", connStr)
+	// db, err = sql.Open("postgres", "postgresql://postgres:QeZ2Dc143wHgFrfT@db.miedlfesejlnjvcytrlw.supabase.co:5432/postgres")
 	if err != nil {
 		log.Fatal(err)
 	}
